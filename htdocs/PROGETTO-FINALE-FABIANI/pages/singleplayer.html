@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleplayer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+
+<body>
+    <!--INIZIO NAVBAR-->
+    <nav class="navbar bg-body-tertiary border-bottom border-2 border-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="../index.html">
+                MINECRAFT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span><img src="../images/blocco-di-terra.png" alt="Logo"
+                        class="d-inline-block align-text-top logo-navbar"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Modalita'
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Singleplayer</a></li>
+                                <li><a class="dropdown-item" href="../pages/multiplayer.html">Multiplayer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/guida.html">Guida
+                                all'installazione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/altri-giochi.html">Altri
+                                giochi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--GAMEPLAY-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Gameplay</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    Il gioco e' incentrato sulla costruzione e l'esplorazione di un vasto mondo virtuale tridimensionale
+                    composto
+                    da blocchi. In Minecraft, i giocatori possono creare e distruggere vari tipi di blocchi per
+                    costruire strutture
+                    e ambienti personalizzati. Il mondo di gioco e' generato proceduralmente, il che significa che e'
+                    generato
+                    casualmente ogni volta che un nuovo mondo viene creato. Ci sono diversi tipi di terreno, biomi e
+                    ambienti,
+                    tra cui foreste, montagne, deserti, oceani e molto altro. I giocatori possono esplorare il mondo di
+                    gioco,
+                    raccogliere risorse naturali come legno,vari tipi di pietra e minerali e utilizzarle per creare
+                    strumenti,
+                    armature e oggetti vari. Il gioco offre anche la possibilita' di coltivare piante e allevare animali.
+                    Il giocatore puo' anche accedere ad altre dimensioni: il nether, un posto dal tema infernale e
+                    demoniaco.
+                    E l'End, dimesione composta da un isola, fatta di una pietra particolare, fluttuante nel vuoto.
+                    Minecraft presenta diverse modalita' di gioco. La modalita' Survival mette i giocatori alla prova nel
+                    cercare di sopravvivere in un ambiente ostile, affrontando nemici come mostri e scheletri e gestendo
+                    risorse come cibo e salute. La modalita' Creative, invece, offre liberta' creativa illimitata,
+                    permettendo
+                    ai giocatori di volare, avere accesso a tutti i materiali e costruire senza restrizioni.
+                </p>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img src="../images/steve-con-spada-e-torcia.png" alt="Steve con spada e torcia">
+            </div>
+        </div>
+    </div>
+    <!--MOB-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">I mob</h1>
+                <p class="border border-3 border-secondary bg-success-subtle p-1">
+                    Tutte le creature che non siano il giocatore vengono denominate 'mob', ne esistono ben 77! Essi sono
+                    divisi in tre macro categorie:<br>
+                    -Passivi<br>
+                    -Neutrali<br>
+                    -Ostili<br>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <h1>Passivi</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    I passivi non reagiranno mai agli attacchi del giocatore,
+                    questa categoria e' formata principalmente dagli animali,
+                    eccetto il lupo, che e' neutrale, e il villager che e' un essere umano.
+                </p>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img src="../images/passive-mobs.avif" alt="Immagine mob passivi" class="foto-mobs">
+            </div>
+            <div class="col-md-8">
+                <h1>Neutrali</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    I neutrali attaccheranno il giocatore solo se attaccati per primi,
+                    nel caso speciale del golem di ferro esso attacchera' anche se a essere
+                    colpiti saranno i villager, in quanto e' il loro protettore.
+                </p>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img src="../images/neutral-mobs.jfif" alt="immagine foto neutrali" class="foto-mobs">
+            </div>
+            <div class="col-md-8">
+                <h1>Ostili</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    Gli ostili attaccheranno il giocatore a prescindere dal fatto che esso li abbia attaccati o meno,
+                    principalmente e' composto da creature quali: zombie, scheletri e quant'altro.
+                </p>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <img src="../images/hostile-mobs.avif" alt="Immagine mob ostili" class="foto-mobs">
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-warning text-center d-none d-md-block" role="alert">
+        Attenzione! i mob potrebbero non essere aggiornati alla versione piu' recente di minecraft.
+    </div>
+    <!--STRUTTURE-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Le strutture</h1>
+                <p class="border border-3 border-secondary bg-success-subtle p-1">
+                    In Minecraft, ci sono diverse strutture che possono essere trovate nel mondo di gioco. Esse sono
+                    generate casualmente
+                    e sparse per tutto il mondo, al loro interno si possono trovare metalli e pietre preziose ma anche
+                    altri oggetti utili
+                    come armature, armi, utensili, materiali di costruzione e molto altro ancora. L'esatta composizione
+                    e quantita' di tesori
+                    puo' variare in base alla versione del gioco e alle impostazioni della generazione del mondo.<br>
+                    Ecco alcune delle principali:<br>
+                    -Villaggio<br>
+                    -Tempio del deserto<br>
+                    -Tempio della giungla<br>
+                    -Magione<br>
+                    -Tempio oceanico<br>
+                    -Fortezza del Nether<br>
+                </p>
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Villaggio</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    E' un insediamento sono abitati dai villager,
+                    NPC (personaggi non giocanti) che commerciano con il giocatore.
+                    I villaggi sono composti da case, fattorie, pozzi e altri edifici.
+                    Vi si puo' trovare cibo, armature, armi, ferro e addirittura diamanti!
+                    Il villaggio cambia apparenze in base al bioma in cui si trova.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/villaggio.jpg" alt="Immagine villaggio" class="foto-strutture">
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Tempio del deserto</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    E' una struttura a piramide, la quale nasconde metalli e pietre preziosi
+                    sotto al suo pavimento. Ma attenzione! Per arrivare al tesoro c'e' una caduta considerevole
+                    e una volta li' potresti innescare della dinamite!
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/piramide.jfif" alt="Immagine piramide" class="foto-strutture">
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Tempio della giungla</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    La struttura ricorda un tempio Maya. All'interno sono presenti grandi ricchezze
+                    ma anche molte trappole! Presta attenzione.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/jungle-temple.avif" alt="Immagine tempio della giungla" class="foto-strutture">
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Magione</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    E' abitata da mob ostili chiamati Illager, come stregoni e vendicatori.
+                    Contengono tesori e strani esperimenti, riuscirai a capire i loro intenti?
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/Mansion.webp" alt="Immagine magione" class="foto-strutture">
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Tempio oceanico</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    E' una struttura sottomarina, segno di una civilta' marina passata. Contiene diversi blocchi d'oro
+                    protetti da delle creature simili a dei pesci palla detti guardiani.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/Ocean_Momument.webp" alt="" class="foto-strutture">
+            </div>
+            <div class="col-md-8 mb-4">
+                <h1>Fortezza del Nether</h1>
+                <p
+                    class="border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+                    E' una struttura che viene generata solo nel Nether, e' costituita da una serie di corridoi e stanze,
+                    costruite principalmente con blocchi di pietra del Nether. Sono caratterizzati da un'architettura
+                    cupa e minacciosa, con un'atmosfera di pericolo imminente. all'interno si trovano casse contenenti
+                    preziosi oggetti come lingotti d'oro, ossidiana, polvere di redstone, perle di Ender e altri
+                    materiali utili.
+                    Ma attenzione, e' piena di mostri ostili!
+                </p>
+            </div>
+            <div class="col-md-4 mb-4 d-none d-md-block">
+                <img src="../images/Nether-Fortress.webp" alt="Immagine fortezza del Nether" class="foto-strutture">
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-warning text-center d-none d-md-block" role="alert">
+        Attenzione! le strutture potrebbero non essere aggiornate alla versione piu' recente di minecraft.
+    </div>
+    <!--MOD-->
+    <div class="mx-auto div-mod-e-spiegazione-multiplayer">
+        <h1 class="text-center">
+            Le mod
+        </h1>
+        <p class="border border-3 border-secondary bg-success-subtle p-1">
+            Le 'mod' sono aggiunte create dagli utenti che modificano o estendono il gioco di base.
+            Consentono agli utenti di personalizzare l'esperienza di gioco, aggiungendo nuovi blocchi, oggetti,
+            creature, meccaniche di gioco e altro ancora. Le mod possono essere create da singoli sviluppatori
+            o da intere comunita' e sono disponibili gratuitamente su siti web dedicati.
+            Le mod possono trasformare Minecraft in un'esperienza completamente diversa, offrendo nuove sfide,
+            ambientazioni e storie. Ad esempio, ci sono mod che aggiungono nuove dimensioni da esplorare,
+            o introducono nuove creature, come draghi o dinosauri. Altre mod si concentrano sulla meccanica
+            di gioco, consentendo agli utenti di automatizzare processi, creare nuovi strumenti o implementare
+            nuovi sistemi di energia. Esistono anche mod che aggiungono elementi tratti da film,
+            serie TV o altri videogiochi famosi, consentendo agli utenti di giocare con i loro personaggi
+            preferiti all'interno di Minecraft. Le mod possono anche migliorare l'aspetto grafico del gioco,
+            aggiungendo nuove texture, shader e effetti speciali.
+        </p>
+    </div>
+    <div class="text-center d-none d-md-block">
+        <h1>Alcuni esempi</h1>
+    </div>
+    <!--CAROUSEL-->
+    <div id="carouselExampleCaptions"
+        class="carousel slide border border-2 border-secondary mx-auto w-75 mb-3 d-none d-md-block">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/pixelmon.webp" class="d-block w-100 altezza-carousel"
+                    alt="Immagine illustrativa pixelmon">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pixélmon</h5>
+                    <p>Mod che porta il mondo dei pokémon su minecraft!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/galacticCraft.webp" class="d-block w-100 altezza-carousel"
+                    alt="Immagine illustrativa Galactic Craft">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Galactic Craft</h5>
+                    <p>Consente agli utenti di esplorare lo spazio e viaggiare su pianeti e lune.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/JurassicCraft.webp" class="d-block w-100 altezza-carousel"
+                    alt="Immagine illustrativa Jurassic Craft">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Jurassic Craft</h5>
+                    <p>Trasporta i giocatori nell'era dei dinosauri, permettendo loro di creare e gestire un parco di
+                        dinosauri.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--TORNA ALLA HOME-->
+    <div class="text-center my-3">
+        <a class="btn btn-light border border-3 border-secondary" href="../index.html" role="button">Torna alla home</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

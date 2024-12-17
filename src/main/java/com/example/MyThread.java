@@ -38,9 +38,9 @@ public class MyThread extends Thread{
             System.out.println("Richiesta terminata");
             File file;
             if(resource.equals("/")){
-                file = new File("htdocs/index.html");
+                file = new File("htdocs/PROGETTO-FINALE-FABIANI/index.html");
             } else{
-                file = new File("htdocs" + resource);
+                file = new File("htdocs/PROGETTO-FINALE-FABIANI" + resource);
             }
             
             

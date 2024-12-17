@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body{
+    background-color:mediumseagreen;
+    font-family: 'Kanit', sans-serif;
+}
+
+#foto-alex-home{
+    width: 65%;
+    height: 15vw;
+}
+#foto-villager-home{
+    width: 30%;
+    height: 30vh;
+}
+
+#foto-Minecraft-Dungeons{
+    width: 30vw;
+    height: 70vh;
+}
+
+#foto-Minecraft-Legends{
+    width: 33vw;
+    height: 45vh;
+}
+
+#foto-Minecraft-Legends{
+    width: 25vw;
+    height: 30vh;
+}
+
+#foto-aternos-1{
+    width: 40vw;
+    height: 20vh;
+}
+
+#foto-aternos-2{
+    width: 40vw;
+    height: 30vh;
+}
+
+.div-mod-e-spiegazione-multiplayer{
+    width: 88%;
+}
+
+.logo-navbar{
+    width: 30px;
+    height: 30px;
+}
+
+.carousel{
+    width: 80vw;
+    height: 70vh;
+}
+
+.foto-cards{
+    height: 30vh;
+    width: 100%;
+}
+
+.row .card{
+    margin-top: 8vh;
+}
+
+.altezza-cards{
+    height: 65vh;
+}
+
+.div-guida{
+    height: auto;
+    margin-top: 15vh;
+}
+
+.loghi-giochi{
+    width: 15vw;
+    height: 25vh;
+}
+
+.altezza-carousel{
+    height: 69.6vh;
+}
+
+.foto-mobs{
+    width: 30vw;
+    height: 20vh;
+}
+.foto-strutture{
+    width: 30vw;
+    height: 30vh;
+}
+.foto-server{
+    width: 30vw;
+    height: 30vh;
+}
+

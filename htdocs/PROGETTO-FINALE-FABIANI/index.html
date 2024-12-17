@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINECRAFT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+</head>
+
+<body>
+  <!--INIZIO NAVBAR-->
+  <nav class="navbar bg-body-tertiary border-bottom border-2 border-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3" href="#">
+        MINECRAFT
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span><img src="./images/blocco-di-terra.png" alt="Logo"
+            class="d-inline-block align-text-top logo-navbar"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Modalita'
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/singleplayer.html">Singleplayer</a></li>
+                <li><a class="dropdown-item" href="./pages/multiplayer.html">Multiplayer</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/guida.html">Guida all'installazione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/altri-giochi.html">Altri giochi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--FOTO ALEX E PARAGRAFO-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col col-md-4 d-none d-md-block w-25">
+        <img src="./images/alex-trasparente.png" alt="Steve esce dal muro" id="foto-alex-home">
+      </div>
+      <div class="col col-md-8 w-75 text-start">
+        <h1 class="w-100">Cos'e' Minecraft?</h1>
+        <p
+          class="w-100 border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+          Minecraft e' il gioco sandbox per antonomasia che ha ispirato tutti i giochi del genere a seguire.<br>
+          Da piu' di dieci anni la sua comunita' online continua ad arricchirsi di nuovi giocatori e idee,<br>
+          grazie ad aggiornamenti annuali!<br>
+          Con Minecraft le possibilita' sono infite, il limite e' solo la tua immaginazione!<br>
+          Il gioco si adatta a qualunque stile di avventura, arricchisciti in miniera o esplora i continenti,<br>
+          il mondo e' nelle tue mani!
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--PARAGRAFO E FOTO STEVE-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col col-md-8 w-75 text-start">
+        <h1 class="w-100">Con chi lo posso giocare?</h1>
+        <p
+          class="w-100 border border-top-0 border-end-0 border-bottom-0 border-3 border-secondary bg-success-subtle p-1">
+          Esplora il mondo a cubi piu' amato di sempre e metti alla prova le tue abilita' di sopravvivenza<br>
+          giocando da solo, oppure goditi la compagnia dei tuoi amici,<br>
+          che sia in pubblico con persone da tutto il mondo o in privato solo fra di voi, la scelta sta a te!
+        </p>
+      </div>
+      <div class="col col-md-4 d-none d-md-block w-25">
+        <img src="./images/steve-muro.png" alt="Steve esce dal muro" class="w-100">
+      </div>
+    </div>
+  </div>
+  <!--VILLAGER-->
+  <div class="w-100">
+    <img src="./images/villager-trasparente.png" alt="Villager che saluta" id="foto-villager-home"
+      class="me-auto mx-auto mx-md-0  d-none d-sm-block">
+    <hr class="mt-0 border border-secondary border-2 opacity-100">
+  </div>
+  <!--CARDS-->
+  <div class="text-center">
+    <h1>Cosa vuoi approfondire?</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border border-2 border-secondary altezza-cards mb-3">
+          <img src="./images/singleplayer.webp" class="card-img-top foto-cards" alt="Foto di Steve">
+          <div class="card-body">
+            <h5 class="card-title">Singleplayer</h5>
+            <p class="card-text">
+              La compagnia non fa per te?<br>
+              Allora la modalita' singleplayer fa al caso tuo!
+            </p>
+            <a href="./pages/singleplayer.html" class="btn btn-primary">Scopri di piu'!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border border-2 border-secondary altezza-cards mb-3">
+          <img src="./images/multiplayer.jfif" class="card-img-top foto-cards" alt="Foto di Steve e Alex">
+          <div class="card-body">
+            <h5 class="card-title">Multiplayer</h5>
+            <p class="card-text">
+              Senza i tuoi amici non riesci a stare?
+              Nessun problema, gioca in multiplayer!
+            </p>
+            <a href="./pages/multiplayer.html" class="btn btn-primary">Scopri di piu'!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border border-2 border-secondary altezza-cards mb-3">
+          <img src="./images/punto-interrogativo.png" class="card-img-top foto-cards" alt="punto-interrogativo">
+          <div class="card-body">
+            <h5 class="card-title">Guida all'installazione</h5>
+            <p class="card-text">Scopri come scaricare il gioco piu' amato di sempre!</p>
+            <a href="./pages/guida.html" class="btn btn-primary">Scopri di piu'!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card border border-2 border-secondary altezza-cards mb-3">
+          <img src="./images/minecraft-logo.png" class="card-img-top foto-cards" alt="Logo di minecraft">
+          <div class="card-body">
+            <h5 class="card-title">Altri giochi</h5>
+            <p class="card-text">Vivi altre eccitanti avventure nell'universo di Minecraft!</p>
+            <a href="./pages/altri-giochi.html" class="btn btn-primary">Scopri di piu'!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
