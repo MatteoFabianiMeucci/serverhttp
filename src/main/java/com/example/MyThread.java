@@ -36,7 +36,15 @@ public class MyThread extends Thread{
             } while (!header.isEmpty());
 
             System.out.println("Richiesta terminata");
-            File file = new File("htdocs" + resource);
+            File file;
+            if(resource.equals("/")){
+                file = new File("htdocs/index.html");
+            } else{
+                file = new File("htdocs" + resource);
+            }
+            
+            
+
             if (file.exists()) {
                 InputStream input = new FileInputStream(file);
                 out.writeBytes("HTTP/1.1 200 OK\n");
