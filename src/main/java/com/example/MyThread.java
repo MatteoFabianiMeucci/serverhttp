@@ -36,16 +36,23 @@ public class MyThread extends Thread{
             } while (!header.isEmpty());
 
             System.out.println("Richiesta terminata");
-            File file;
-            if(resource.equals("/")){
-                file = new File("htdocs/PROGETTO-FINALE-FABIANI/index.html");
-            } else{
-                file = new File("htdocs/PROGETTO-FINALE-FABIANI" + resource);
-            }
-            
-            
 
-            if (file.exists()) {
+            if(resource.equals("/")){
+                resource = "/index.html";
+            }
+
+            if(resource.endsWith("/")){
+                resource = resource + "index.html";
+            }
+
+            File file = new File("htdocs/PROGETTO-FINALE-FABIANI" + resource);
+            
+            if(file.isDirectory()){
+                out.writeBytes("HTTP/1.1 301 Moved Permanently\n");
+                out.writeBytes("Content-Length: 0" + "\n");
+                out.writeBytes("Location: " + resource +"/\n");
+                out.writeBytes("\n");
+            } else if (file.exists()) {
                 InputStream input = new FileInputStream(file);
                 out.writeBytes("HTTP/1.1 200 OK\n");
                 out.writeBytes("Content-Type: " + this.getContentType(resource) + "\n");
